@@ -14,15 +14,15 @@
 
 .buttonPlacement {
     position: absolute;
-    margin-left: 1000px;
-    bottom: 30px;
+    margin-left: 870px;
+    bottom: 0.1px;
 }
 
 #blackscreen {
     align-self: center;
     position: absolute;
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
     background-color: transparent;
     color: transparent;
 }
@@ -54,15 +54,28 @@ h1 {
 
 .spin {
     position: absolute;
+    bottom: -100px;
+    left: 690px;
     width: 600px;
     height: 600px;
+    z-index: -1;
     -webkit-animation: spin 5s linear infinite;
     animation: spin 5s linear infinite;
 }
 
+.pfp-pic {
+    /* position: relative;
+    bottom: 860px;
+    left: 870px; */
+    position: absolute;
+    left: 870px;
+    bottom: 860px;
+    z-index: 1;
+}
+
 .whitecircle {
     position: absolute;
-    bottom: 440px;
+    bottom: -50px;
     left: 740px;
     width: 500px;
     height: 500px;
@@ -71,6 +84,7 @@ h1 {
     border-width: 1px;
     border-color: transparent;
     border-radius: 999px;
+    z-index: 0;
 }
 
 @-webkit-keyframes spin {
@@ -113,13 +127,6 @@ html {
     background-color: rgb(87, 222, 179);
 }
 
-.pfp {
-    /* position: relative;
-    bottom: 860px;
-    left: 870px; */
-    position: absolute;
-}
-
 .creeds {
     border-style: solid;
     border-width: 10px;
@@ -132,7 +139,7 @@ html {
 
 .pfp11 {
     position: absolute;
-    z-index: -3;
+    z-index: -1;
 }
 
 .creedstext {
